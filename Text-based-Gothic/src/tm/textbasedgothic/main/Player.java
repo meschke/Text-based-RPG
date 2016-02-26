@@ -3,8 +3,9 @@ package tm.textbasedgothic.main;
 public class Player extends LivingBeing {
 	// Additional attributes
 	private int exp;
-	private int maxExp;		// to reach new level
-	private int lp;			// good old Gothic-tradition: Learning Points!
+	private int maxExp;			// to reach new level
+	private int lp;				// good old Gothic-tradition: Learning Points!
+	private List<Action> actions;		// change Location, talk to NPC, attack etc.
 	
 	// Starting stats for Hero
 	final private String INIT_HERO_NAME = "Nameless";	// name
