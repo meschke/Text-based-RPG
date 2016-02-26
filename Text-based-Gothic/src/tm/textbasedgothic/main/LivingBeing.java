@@ -8,6 +8,7 @@ public class LivingBeing {
   protected int maxHealth;
   protected int strength;
   protected int agility;
+  protected Location currentLocation;
 //  private Inventory inventory;
 //  private Skill skills;                 // maybe more like List<Skill> skills;
 //  Attack Power and Resistances
@@ -29,44 +30,52 @@ public class LivingBeing {
     this.description = description;
   }
   
-  public String getLevel() {
+  public int getLevel() {
     return level;
   }
   
-  public void setLevel(String level) {
+  public void setLevel(int level) {
     this.level = level;
   }
   
-  public String getHealth() {
+  public int getHealth() {
     return health;
   }
   
-  public void setHealth(String health) {
+  public void setHealth(int health) {
     this.health = health;
   }
   
-  public String getMaxHealth() {
+  public int getMaxHealth() {
     return maxHealth;
   }
   
-  public void setMaxHealth(String maxHealth) {
+  public void setMaxHealth(int maxHealth) {
     this.maxHealth = maxHealth;
   }
   
-  public String getStrength() {
+  public int getStrength() {
     return strength;
   }
   
-  public void setStrength(String strength) {
+  public void setStrength(int strength) {
     this.strength = strength;
   }
 
-  public String getAgility() {
+  public int getAgility() {
     return agility;
   }
   
-  public void setAgility(String agility) {
+  public void setAgility(int agility) {
     this.agility = agility;
+  }
+  
+  public Location getCurrentLocation() {
+    return currentLocation;
+  }
+  
+  public void setCurrentLocation(Location currentLocation) {
+    this.currentLocation = currentLocation;
   }
 
 }
