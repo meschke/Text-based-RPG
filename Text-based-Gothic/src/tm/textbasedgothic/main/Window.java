@@ -17,6 +17,6 @@ public class Window extends JFrame {
 		
 		frame.setVisible(true);
 		
-		new ViewMenu (game, this);
+		new MenuView (game, this);
 	}
 }
